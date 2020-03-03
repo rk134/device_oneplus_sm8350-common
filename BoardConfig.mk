@@ -17,6 +17,9 @@ DEVICE_PATH := device/realme/lunaa
 # Board-info
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/board/board-info.txt
 
+# Build rules
+BUILD_BROKEN_NINJA_USES_ENV_VARS := TEMPORARY_DISABLE_PATH_RESTRICTIONS
+
 # Display
 TARGET_SCREEN_DENSITY := 480
 
