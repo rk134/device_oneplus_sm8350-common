@@ -260,7 +260,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     als_correction_service.lunaa \
-    android.hardware.sensors@2.0-service.multihal \
+    android.hardware.sensors@2.1-service.multihal \
     libsensorndkbridge \
     sensors.oplus
 
