@@ -31,3 +31,6 @@ include vendor/realme/lunaa/BoardConfigVendor.mk
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := RMX3360,RMX3363,RMX3361,lunaa,RE54ABL1
+
+# SELinux - Include additional tree-specific rules
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor

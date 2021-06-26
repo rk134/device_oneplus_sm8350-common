@@ -1,0 +1,2 @@
+# Allow hal_sensors_default to check dim status
+allow hal_sensors_default vendor_sysfs_dc_dim:file r_file_perms;
