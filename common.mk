@@ -180,9 +180,13 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
-## Lineage Health
+# Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
+
+# lmkd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.lmk.force_inkernel_lmk=true
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
