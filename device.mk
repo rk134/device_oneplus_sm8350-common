@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.face.sense_service.camera_id=1
 
+# Fingerprint
+PRODUCT_ODM_PROPERTIES += \
+    persist.vendor.fp.template_updateflag=V1
+
 # Overlays
 PRODUCT_PACKAGES += \
     AOSPALunaaFrameworks \
