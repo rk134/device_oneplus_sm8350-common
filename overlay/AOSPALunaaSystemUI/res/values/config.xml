@@ -21,4 +21,7 @@
          1: Right -->
     <integer name="config_alertSliderLocation">1</integer>
 
+    <!-- UDFPS Color -->
+    <color name="config_udfpsColor">#00ffffff</color>
+
 </resources>
