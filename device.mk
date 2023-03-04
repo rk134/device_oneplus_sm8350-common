@@ -43,7 +43,9 @@ PRODUCT_ODM_PROPERTIES += \
 # Init
 PRODUCT_PACKAGES += \
     init.oplus.nfc.rc \
-    init.oplus.widevine.rc
+    init.oplus.widevine.rc \
+    init.yupik.post_boot.rc \
+    init.yupik.post_boot.sh
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.qcom.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sh
