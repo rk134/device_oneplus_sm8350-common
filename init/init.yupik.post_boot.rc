@@ -1,0 +1,15 @@
+#
+# Copyright (C) 2023 StatiXOS
+# Copyright (C) 2023 Paranoid Android
+# SPDX-License-Identifier: Apache-2.0
+#
+
+service yupik-post-boot /vendor/bin/sh /vendor/bin/init.yupik.post_boot.sh
+    class late_start
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
+on property:vendor.post_boot.parsed=1
+    start yupik-post-boot
