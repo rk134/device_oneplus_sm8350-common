@@ -1,2 +1,5 @@
 # Display - DC Dimming node
 genfscon sysfs /kernel/oplus_display/dimlayer_bl_en u:object_r:vendor_sysfs_dc_dim:s0
+
+# Power - fast-charging node
+genfscon sysfs /sys/class/oplus_chg/battery/fast_charge u:object_r:vendor_sysfs_battery_supply:s0

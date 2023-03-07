@@ -1,0 +1,2 @@
+# Power - fast-charging node
+/sys/class/oplus_chg/battery/fast_charge u:object_r:vendor_sysfs_battery_supply:s0
