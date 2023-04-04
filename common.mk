@@ -255,7 +255,8 @@ PRODUCT_COPY_FILES += \
     hardware/oplus/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.1-service.multihal \
+    als_correction_service.lunaa \
+    android.hardware.sensors@2.0-service.multihal \
     libsensorndkbridge \
     sensors.oplus
 
