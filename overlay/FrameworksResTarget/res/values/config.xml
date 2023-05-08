@@ -37,4 +37,8 @@
     <!-- The type of the light sensor to be used by the display framework for things like
          auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
     <string name="config_displayLightSensorType" translatable="false">qti.sensor.wise_light</string>
+
+    <!-- Screen brightness when dozing. -->
+    <integer name="config_screenBrightnessDoze">6</integer>
+
 </resources>
