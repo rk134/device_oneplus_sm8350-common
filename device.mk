@@ -67,7 +67,8 @@ PRODUCT_PACKAGES += \
     AOSPALunaaSystemUI \
     FrameworksResTarget \
     SettingsProviderResTarget \
-    SystemUIResTarget
+    SystemUIResTarget \
+    LunaaNfcOverlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
