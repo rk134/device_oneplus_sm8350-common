@@ -45,6 +45,9 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     android.hardware.audio.sounddose-vendor-impl
 
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=9 \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
