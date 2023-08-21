@@ -147,6 +147,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.sys.brightness.low.gamma=true
 
+# Dolby
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 # EGL
 PRODUCT_VENDOR_PROPERTIES += \
 	ro.egl.blobcache.multifile=true \
