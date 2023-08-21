@@ -36,6 +36,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.face.sense_service.camera_id=1
 
+# Dolby Manager
+PRODUCT_PACKAGES += \
+    DolbyManager
+
 # Fingerprint
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.fp.template_updateflag=V1
