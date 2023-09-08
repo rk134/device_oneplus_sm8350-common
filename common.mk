@@ -258,6 +258,7 @@ PRODUCT_COPY_FILES += \
     hardware/oplus/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 PRODUCT_PACKAGES += \
+    als_correction_service.OPSM8350
     android.hardware.sensors@2.1-service.oplus-multihal \
     libsensorndkbridge \
     sensors.oplus
