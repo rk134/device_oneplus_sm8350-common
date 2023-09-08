@@ -51,4 +51,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
 # Call the proprietary setup
-$(call inherit-product, vendor/oneplus/oneplus9rt/oneplus9rt-vendor.mk)
+$(call inherit-product, vendor/realme/lunaa/lunaa-vendor.mk)

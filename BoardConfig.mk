@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/oneplus/oneplus9rt
+DEVICE_PATH := device/realme/lunaa
 
 # Display
 TARGET_SCREEN_DENSITY := 480
@@ -24,7 +24,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/devic
 include device/oneplus/sm8350-common/BoardConfigCommon.mk
 
 # Include proprietary files
-include vendor/oneplus/oneplus9rt/BoardConfigVendor.mk
+include vendor/realme/lunaa/BoardConfigVendor.mk
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := oneplus9rt,OP5154L1,OP5155L1
