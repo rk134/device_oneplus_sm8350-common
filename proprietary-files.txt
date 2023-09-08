@@ -372,11 +372,6 @@ vendor/lib64/libqc2vppfilter.so
 vendor/lib64/libqconfigclient.so
 vendor/lib64/vendor.qti.hardware.qconfig@1.0.so
 
-# NFC
-vendor/etc/libnfc-mtp-SN100.conf
-vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
-vendor/lib/libsn100u_fw.so
-
 # PD
 vendor/bin/pd-mapper
 vendor/lib64/libpdmapper.so
