@@ -31,4 +31,7 @@
           is interactive. -->
      <bool name="config_volumeHushGestureEnabled">false</bool>
 
+    <!-- Boolean indicating whether display white balance is supported. -->
+    <bool name="config_displayWhiteBalanceAvailable">false</bool>
+
 </resources>
