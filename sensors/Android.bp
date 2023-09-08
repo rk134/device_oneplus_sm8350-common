@@ -47,27 +47,3 @@ cc_binary {
         "android.hardware.sensors@2.X-multihal",
     ],
 }
-
-cc_binary {
-    name: "als_correction_service.OPSM8350",
-    stem: "als_correction_service",
-    init_rc: ["als_correction_service.rc"],
-    system_ext_specific: true,
-    srcs: [
-        "als_correction_service.cpp",
-    ],
-    shared_libs: [
-        "libbase",
-        "libbinder",
-        "libgui",
-        "libui",
-        "libutils",
-        "liblog",
-    ],
-    cflags: [
-        "-DNO_INPUT",
-    ],
-    local_include_dirs: [
-        "include",
-    ],
-}
