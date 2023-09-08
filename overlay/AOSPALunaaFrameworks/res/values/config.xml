@@ -17,7 +17,7 @@
 <resources>
 
     <!-- Whether device has an alert slider. -->
-    <bool name="config_hasAlertSlider">true</bool>
+    <bool name="config_hasAlertSlider">false</bool>
 
     <!-- Defines the sysfs attribute path used by the device
          to enable/disable DC dimming. -->
