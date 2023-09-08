@@ -27,4 +27,4 @@ include device/oneplus/sm8350-common/BoardConfigCommon.mk
 include vendor/realme/lunaa/BoardConfigVendor.mk
 
 # OTA
-TARGET_OTA_ASSERT_DEVICE := oneplus9rt,OP5154L1,OP5155L1
+TARGET_OTA_ASSERT_DEVICE := RMX3360,RMX3363,RMX3361,lunaa,RE54ABL1
