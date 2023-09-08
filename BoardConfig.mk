@@ -14,6 +14,9 @@
 
 DEVICE_PATH := device/realme/lunaa
 
+# Board-info
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/configs/board/board-info.txt
+
 # Display
 TARGET_SCREEN_DENSITY := 480
 

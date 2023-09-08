@@ -1,0 +1,1 @@
+require board=RMX3360|RMX3361|RMX3363|RE54ABL1|lunaa|yupik|lahaina
