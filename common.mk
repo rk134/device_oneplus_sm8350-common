@@ -174,10 +174,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
-# NFC
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor
-
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -213,7 +209,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qteeconnector.retrying_timeout=2000
 
 # QTI
-TARGET_COMMON_QTI_COMPONENTS := \
+TARGET_COMMON_QTI_COMPONENTS += \
     adreno \
     alarm \
     audio \
@@ -224,7 +220,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     gps \
     init \
     media \
-    nfc \
     overlay \
     perf \
     qseecomd \
@@ -237,7 +232,8 @@ TARGET_COMMON_QTI_COMPONENTS := \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio.deprecated@1.0.vendor
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.force_on_dc=true \
