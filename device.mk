@@ -36,15 +36,15 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPAOnePlus9RTFrameworks \
-    AOSPAOnePlus9RTSystemUI \
+    AOSPALunaaFrameworks \
+    AOSPALunaaSystemUI \
     FrameworksResTarget \
     SettingsProviderResTarget \
     SystemUIResTarget
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/oneplus/oneplus9rt
+    device/realme/lunaa
 
 # Thermal
 PRODUCT_COPY_FILES += \

@@ -14,10 +14,10 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.aospa.oneplus9rt.systemui">
+    package="co.aospa.lunaa">
 
     <overlay
         android:isStatic="true"
         android:priority="800"
-        android:targetPackage="com.android.systemui" />
+        android:targetPackage="android" />
 </manifest>

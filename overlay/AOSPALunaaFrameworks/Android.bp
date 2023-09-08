@@ -13,6 +13,6 @@
 // limitations under the License.
 
 runtime_resource_overlay {
-    name: "AOSPAOnePlus9RTSystemUI",
+    name: "AOSPALunaaFrameworks",
     product_specific: true,
 }
