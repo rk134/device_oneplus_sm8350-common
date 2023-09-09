@@ -37,8 +37,20 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.face.sense_service.camera_id=1
 
 # Dolby Manager
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml
+
 PRODUCT_PACKAGES += \
     DolbyManager
+
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.audio.dolby.ds2.enabled=false \
+    vendor.audio.dolby.ds2.hardbypass=false \
+    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
+    ro.vendor.dolby.model=PAFM00 \
+    ro.vendor.dolby.device=OP46C3 \
+    ro.vendor.dolby.manufacturer=OPLUS \
+    ro.vendor.dolby.brand=OPLUS
 
 # Fingerprint
 PRODUCT_ODM_PROPERTIES += \

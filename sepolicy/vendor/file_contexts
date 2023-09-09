@@ -1,6 +1,10 @@
 # Power - fast-charging node
 /sys/class/oplus_chg/battery/fast_charge                                    u:object_r:vendor_sysfs_battery_supply:s0
 
+# Dolby
+/data/vendor/dolby(/.*)?                                                               u:object_r:vendor_data_file:s0
+/(vendor|system/vendor|odm)/bin/hw/vendor\.dolby_v3_6\.hardware\.dms360@2\.0-service   u:object_r:hal_dms_default_exec:s0
+
 # NFC
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service\.st           u:object_r:hal_nfc_default_exec:s0
 

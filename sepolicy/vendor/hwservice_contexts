@@ -1,2 +1,5 @@
 # Sensors
 vendor.oplus.hardware.oplusSensor::ISensorFeature    u:object_r:vendor_hal_oplusSensor_hwservice:s0
+
+# Dolby
+vendor.dolby_v3_6.hardware.dms360::IDms                               u:object_r:hal_dms_hwservice:s0
