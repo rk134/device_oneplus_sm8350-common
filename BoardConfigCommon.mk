@@ -89,7 +89,8 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(COMMON_PATH)/configs/vintf/oplus_vendor_framework_compatibility_matrix.xml
+    $(COMMON_PATH)/configs/vintf/oplus_vendor_framework_compatibility_matrix.xml \
+    $(COMMON_PATH)/configs/vintf/dolby_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/configs/vintf/manifest.xml
