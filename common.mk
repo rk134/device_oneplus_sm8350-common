@@ -52,6 +52,15 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=9 \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.audio.dolby.ds2.enabled=false
+    vendor.audio.dolby.ds2.hardbypass=false
+    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
+    ro.vendor.dolby.model=PAFM00
+    ro.vendor.dolby.device=OP46C3
+    ro.vendor.dolby.manufacturer=OPLUS
+    ro.vendor.dolby.brand=OPLUS
+
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.audio.bcl.enabled=false \
     persist.vendor.audio.fluence.voicerec=true \
@@ -219,7 +228,24 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/oplus
 
+<<<<<<< HEAD
 # Neural Networks
+=======
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/media/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
+    $(LOCAL_PATH)/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libcodec2_hidl@1.0.vendor
+
+# Net
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor
+
+# Neural network
+>>>>>>> 70d0052a (sm8350-common: Introduce Dolby Atmos support)
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
