@@ -40,6 +40,16 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_PACKAGES += \
     DolbyManager
 
+# Dolby
+PRODUCT_VENDOR_PROPERTIES += \
+	vendor.audio.dolby.ds2.enabled=false \
+	vendor.audio.dolby.ds2.hardbypass=false \
+	ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
+	ro.vendor.dolby.model=PAFM00 \
+	ro.vendor.dolby.device=OP46C3 \
+	ro.vendor.dolby.manufacturer=OPLUS \
+	ro.vendor.dolby.brand=OPLUS
+
 # Fingerprint
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.fp.template_updateflag=V1

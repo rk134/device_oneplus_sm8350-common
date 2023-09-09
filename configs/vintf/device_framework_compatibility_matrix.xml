@@ -11,7 +11,6 @@
      limitations under the License.
 -->
 <compatibility-matrix version="1.0" type="framework">
-
     <!-- Camera -->
     <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.cameraextension</name>
@@ -20,5 +19,13 @@
             <instance>default</instance>
         </interface>
     </hal>
-
+    <!-- Dolby -->
+    <hal format="hidl" optional="true">
+        <name>vendor.dolby_v3_6.hardware.dms360</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
