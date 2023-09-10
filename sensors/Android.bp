@@ -21,6 +21,7 @@ cc_binary {
     vendor: true,
     relative_install_path: "hw",
     srcs: [
+        "AlsCorrection.cpp",
         "service.cpp",
         "HalProxy.cpp",
         "HalProxyCallback.cpp",

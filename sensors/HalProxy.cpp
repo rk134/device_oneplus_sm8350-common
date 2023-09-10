@@ -16,7 +16,7 @@
 
 #include "HalProxy.h"
 
-#include "AlsCorrection.h"
+#include "include/AlsCorrection.h"
 
 #include <android/hardware/sensors/2.0/types.h>
 
@@ -506,7 +506,7 @@ void HalProxy::initializeSensorList() {
                         sensor.typeAsString = SENSOR_STRING_TYPE_PICK_UP_GESTURE;
                         ALOGV("Patched oplus pickup sensor");
                     }
-
+                    }
                     mSensors[sensor.sensorHandle] = sensor;
                 }
             }

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#include "AlsCorrection.h"
+#include "include/AlsCorrection.h"
 
 #include <cutils/properties.h>
 #include <fstream>
