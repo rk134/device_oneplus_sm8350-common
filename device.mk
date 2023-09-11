@@ -45,6 +45,9 @@ PRODUCT_PACKAGES += \
     init.oplus.nfc.rc \
     init.oplus.widevine.rc
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.qcom.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sh
+
 # NFC
 $(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
 TARGET_USES_ST_AIDL_NFC := true
