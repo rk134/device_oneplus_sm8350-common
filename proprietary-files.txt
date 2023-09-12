@@ -1010,6 +1010,12 @@ odm/vendor/firmware/ancap64.b06
 odm/vendor/firmware/ancap64.b07
 odm/vendor/firmware/ancap64.mdt
 
+# Media
+vendor/etc/media_yupik_v1/video_system_specs.json
+vendor/etc/media_codecs_performance_yupik_v1.xml
+vendor/etc/media_codecs_yupik_v1.xml
+vendor/etc/media_profiles_yupik_v1.xml
+
 # Performance
 odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
