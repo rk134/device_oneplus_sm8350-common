@@ -1,0 +1,2 @@
+# Sensor
+vendor.oplus.hardware.oplusSensor.ISensorFeature/default                u:object_r:hal_oplusSensor_aidl_service:s0

@@ -16,10 +16,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.oplus    u:object_r:hal_fingerprint_default_exec:s0
 /dev/goodix_fp                                                                                   u:object_r:fingerprint_device:s0
 /dev/jiiov_fp                                                                                    u:object_r:fingerprint_device:s0
-
-# NFC
-/(odm|vendor/odm)/bin/hw/vendor\.qti\.esepowermanager@1\.1-service    u:object_r:vendor_hal_esepowermanager_qti_exec:s0
-/(odm|vendor/odm)/bin/hw/vendor\.qti\.secure_element@1\.2-service     u:object_r:hal_secure_element_default_exec:s0
+/mnt/vendor/persist/fingerprint(/.*)?                                                            u:object_r:vendor_persist_fingerprint_file:s0
 
 # Partitions
 /dev/block/platform/soc/1d84000\.ufshc/by-name/vbmeta_vendor_[ab]      u:object_r:vendor_custom_ab_block_device:s0
@@ -35,6 +32,8 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/oplusreserve[1-4]    u:object_r:vendor_reserve_partition:s0
 
 # Sensors
+/(odm|vendor/odm)/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service         u:object_r:hal_oplusSensor_aidl_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service    u:object_r:vendor_hal_oplusSensor_default_exec:s0
 /(odm|vendor/odm)/bin/oplus_sensor_fb    u:object_r:vendor_sensors_exec:s0
 
 # Touchpanel

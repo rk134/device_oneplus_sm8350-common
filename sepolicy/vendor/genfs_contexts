@@ -17,6 +17,10 @@ genfscon proc /fp_id    u:object_r:vendor_proc_fingerprint:s0
 # Versioning
 genfscon proc /oplusVersion    u:object_r:vendor_proc_oplus_version:s0
 
+# Sensors
+genfscon proc /sensor/als_cali                        u:object_r:vendor_proc_oplus_als_file:s0
+genfscon proc /sensor/pressure_cali                   u:object_r:vendor_proc_eng_cali_file:s0
+
 # Vibrator
 genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-6/6-005a/leds/vibrator    u:object_r:sysfs_vibrator:s0
 
