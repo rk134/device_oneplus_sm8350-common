@@ -19,6 +19,7 @@ TARGET_SCREEN_DENSITY := 480
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/configs/vintf/device_framework_compatibility_matrix.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 # Inherit from sm8350-common
 include device/oneplus/sm8350-common/BoardConfigCommon.mk
@@ -28,3 +29,6 @@ include vendor/oneplus/oneplus9rt/BoardConfigVendor.mk
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := oneplus9rt,OP5154L1,OP5155L1
+
+# Sepolicy - Additional rules
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
