@@ -18,3 +18,7 @@ type vendor_proc_fingerprint, fs_type, proc_type;
 
 # Versioning
 type vendor_proc_oplus_version, fs_type, proc_type;
+
+# Sensors
+type vendor_proc_eng_cali_file, fs_type, proc_type;
+type vendor_proc_oplus_als_file, fs_type, proc_type;

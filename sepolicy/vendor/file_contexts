@@ -46,3 +46,4 @@
 
 # Sensors
 /vendor/bin/hw/android\.hardware\.sensors@2.1-service\.oplus-multihal     u:object_r:hal_sensors_default_exec:s0
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service  u:object_r:vendor_hal_oplusSensor_default_exec:s0
