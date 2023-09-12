@@ -1,2 +1,6 @@
 # Fingerprint
 type vendor_persist_fingerprint_file, file_type;
+
+# Sensors
+type vendor_proc_eng_cali_file, fs_type, proc_type;
+type vendor_proc_oplus_als_file, fs_type, proc_type;

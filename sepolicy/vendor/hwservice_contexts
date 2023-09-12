@@ -1,0 +1,2 @@
+# Sensors
+vendor.oplus.hardware.oplusSensor::ISensorFeature    u:object_r:vendor_hal_oplusSensor_hwservice:s0

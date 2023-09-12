@@ -1,0 +1,2 @@
+# Sensors
+type vendor_hal_oplusSensor_hwservice, hwservice_manager_type, protected_hwservice;

@@ -7,3 +7,6 @@
 # Fingerprint
 /dev/jiiov_fp                                                               u:object_r:fingerprint_device:s0
 /mnt/vendor/persist/fingerprint(/.*)?                                       u:object_r:vendor_persist_fingerprint_file:s0
+
+# Sensors
+/(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service  u:object_r:vendor_hal_oplusSensor_default_exec:s0
