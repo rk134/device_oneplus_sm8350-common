@@ -42,7 +42,8 @@ PRODUCT_ODM_PROPERTIES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.oplus.nfc.rc
+    init.oplus.nfc.rc \
+    init.oplus.widevine.rc
 
 # NFC
 $(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
