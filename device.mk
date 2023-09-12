@@ -75,6 +75,10 @@ PRODUCT_SOONG_NAMESPACES += \
     device/realme/lunaa \
     hardware/st/nfc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    als_correction_service.OPSM8350
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
