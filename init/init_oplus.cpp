@@ -50,12 +50,15 @@ void vendor_load_properties() {
 	case 21603: // CN
                OverrideProperty("ro.product.product.model", "RMX3361");
                OverrideProperty("ro.product.product.device", "RE507C");
+               OverrideProperty("ro.boot.hardware.sku", "lunaa");
             break;
         case 21675: // IN
                OverrideProperty("ro.product.product.model", "RMX3360");
+               OverrideProperty("ro.boot.hardware.sku", "lunaa");
             break;
         case 21676: // EU
                OverrideProperty("ro.product.product.model", "RMX3363");
+               OverrideProperty("ro.boot.hardware.sku", "lunaa");
             break;
         default:
             LOG(ERROR) << "Unexpected project name: " << prjname;
