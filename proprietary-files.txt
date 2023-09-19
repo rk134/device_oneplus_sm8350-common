@@ -933,3 +933,7 @@ vendor/lib64/libtrustedapploader.so
 
 # WLAN - BSP
 vendor/bin/cnss-daemon
+
+# WLAN
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
