@@ -9,7 +9,7 @@ odm/lib/rfsa/adsp/libaiboost_skel.so
 odm/lib/rfsa/adsp/libaiboost_skel_v65.so
 odm/lib/rfsa/adsp/libaiboost_skel_v66.so
 odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so
-odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
+odm/lib/rfsaf/adsp/libarcsoft_hdrplus_hvx_skel.so
 odm/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so
 odm/lib/rfsa/adsp/libc++abi.so.1
 odm/lib/rfsa/adsp/libcalculator_domains_skel.so
@@ -113,13 +113,6 @@ odm/etc/lvimfs_params/LVIMFS_Parameter_ID8_MIC_Unprocess.txt
 odm/etc/lvimfs_params/LVIMFS_Parameter_ID9_MIC_Voice.txt
 odm/firmware/tfa98xx.cnt
 odm/lib/libaudioEngineerTest.so
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
-vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
-vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd
-vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/hw/sound_trigger.primary.lahaina.so
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
@@ -1042,14 +1035,6 @@ odm/etc/nfc/libnfc-st21h_conf.txt_21675:vendor/firmware/libnfc-st21h_conf.txt
 odm/etc/nfc/st21nfc_fw.bin_st21h:vendor/firmware/st21nfc_fw.bin
 odm/etc/nfc/st21nfc_fw7.bin_st21h:vendor/firmware/st21nfc_fw7.bin
 
-# Performance
-odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
-odm/lib64/vendor.oplus.hardware.performance-V1-ndk_platform.so
-
-# RemoteFS
-vendor/bin/rmt_storage
-vendor/etc/init/vendor.qti.rmt_storage.rc
-
 # Sensors
 odm/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service
 odm/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc
@@ -1098,17 +1083,3 @@ vendor/firmware/vpu20_1v_unsigned.mbn
 odm/etc/wifi/bdwlan.elf
 odm/etc/wifi/cnss_diag_always_on.conf
 odm/etc/wifi/regdb.bin
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/wpa_supplicant_overlay.conf
-
-# Widevine
-odm/bin/hw/android.hardware.drm@1.3-service.widevine
-odm/etc/init/android.hardware.drm@1.3-service.widevine.rc
--odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-odm/lib64/mediadrm/libwvdrmengine.so
-odm/lib64/liboemcrypto.so
-odm/lib64/libwvhidl.so
-vendor/etc/oplus_Widevine_licenses.pfm
-vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
-vendor/etc/Oplus_QC_LTM_Commercial_SM7325_2021_05_20.pfm
-vendor/lib64/libtrustedapploader.so
