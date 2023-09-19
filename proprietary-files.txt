@@ -919,5 +919,17 @@ vendor/lib64/libwfdhdcpcp.so
 vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so
 vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
+# Widevine
+odm/bin/hw/android.hardware.drm@1.3-service.widevine
+odm/etc/init/android.hardware.drm@1.3-service.widevine.rc
+-odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
+odm/lib64/mediadrm/libwvdrmengine.so
+odm/lib64/liboemcrypto.so
+odm/lib64/libwvhidl.so
+vendor/etc/oplus_Widevine_licenses.pfm
+vendor/etc/OnePlus_QC_LTM_Commercial_SM8350_2021_01_19.pfm
+vendor/etc/Oplus_QC_LTM_Commercial_SM7325_2021_05_20.pfm
+vendor/lib64/libtrustedapploader.so
+
 # WLAN - BSP
 vendor/bin/cnss-daemon
