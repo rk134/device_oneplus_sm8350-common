@@ -38,7 +38,7 @@ odm/lib/rfsa/adsp/libsnpe_htp_v68_skel.so
 odm/lib/rfsa/adsp/libvdblurless_skel.so
 odm/lib/rfsa/adsp/libvdsuperphoto_skel.so
 odm/lib/rfsa/adsp/libworker_pool.so
-odm/lib/rfsaf/adsp/libarcsoft_hdrplus_hvx_skel.so
+odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
 vendor/lib/rfsa/adsp/bm2n06.bin
 vendor/lib/rfsa/adsp/bm2n08.bin
 vendor/lib/rfsa/adsp/bm2n12.bin
