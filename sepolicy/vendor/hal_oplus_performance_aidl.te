@@ -8,6 +8,6 @@ init_daemon_domain(hal_oplus_performance_aidl)
 
 binder_call(vendor_hal_oplus_performance_client, vendor_hal_oplus_performance_server)
 
-hal_attribute_service(vendor_hal_oplus_performance, hal_oplus_performance_aidl_service)
+add_service(vendor_hal_oplus_performance_client, hal_oplus_performance_aidl_service)
 
 allow vendor_hal_oplus_performance_client hal_oplus_performance_aidl_service:service_manager find;
