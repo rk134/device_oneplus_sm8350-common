@@ -160,11 +160,7 @@ PRODUCT_PACKAGES += \
     fstab.default \
     init.oplus.rc \
     init.target.rc \
-    ueventd.oplus.rc \
-    init.oplus.post_boot.sh
-
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.post_boot.custom=true
+    ueventd.oplus.rc
 
 # Keymaster
 PRODUCT_VENDOR_PROPERTIES += \
