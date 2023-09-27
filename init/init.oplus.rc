@@ -80,10 +80,3 @@ service vendor.camera-provider-2-4 /vendor/bin/hw/android.hardware.camera.provid
     ioprio rt 4
     capabilities SYS_NICE
     task_profiles CameraServiceCapacity HighPerformance
-
-service oplus-post-boot /vendor/bin/sh /vendor/bin/init.oplus.post_boot.sh
-    class core
-    user root
-    group root system wakelock graphics
-    disabled
-    oneshot
