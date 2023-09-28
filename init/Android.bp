@@ -19,6 +19,20 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.yupik.post_boot.rc",
+    src: "init.yupik.post_boot.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.oplus.widevine.rc",
+    src: "init.oplus.widevine.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
 sh_binary {
     name: "init.yupik.post_boot.sh",
     src: "init.yupik.post_boot.sh",

@@ -68,7 +68,7 @@ if [ "$device_provisioned" == "1" ]; then
 fi
 
 # Enable suspend to RAM
-echo deep > /sys/power/mem_sleep
+echo s2idle > /sys/power/mem_sleep
 
 # CPU Input boost
 echo "0:1324800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
@@ -76,3 +76,6 @@ echo 150 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
 # SSG
 echo 25 > /dev/blkio/background/blkio.ssg.max_available_ratio
+
+# Swappiness
+echo 100 > /proc/sys/vm/swappiness
