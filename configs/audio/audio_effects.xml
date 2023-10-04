@@ -45,7 +45,7 @@
         <!-- #ifdef OPLUS_FEATURE_DOLBY -->
         <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, add for dolby -->
         <!-- DOLBY DAP -->
-        <library name="dap_sw" path="libswdap.so"/>
+        <library name="dap_sw" path="libswdap_v3_6.so"/>
         <!-- DOLBY END -->
         <!-- DOLBY VQE -->
         <library name="vqe" path="libswvqe_v3_6.so"/>
@@ -127,11 +127,9 @@
         </stream>
     -->
     <!-- #endif OPLUS_FEATURE_DOLBY -->
-
         <stream type="voice_call">
             <apply effect="voice_helper"/>
         </stream>
-
     <!-- #ifndef OPLUS_FEATURE_DOLBY -->
     <!-- WuHao@MULTIMEDIA.AUDIOSERVER.EFFECT, 2019/09/18, Remove for dolby -->
     <!--
