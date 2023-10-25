@@ -285,6 +285,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
+# UFFD
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.runtime_native_boot.enable_uffd_gc=true \
+    ro.dalvik.vm.enable_uffd_gc=true
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
