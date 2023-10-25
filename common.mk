@@ -129,6 +129,11 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.sys.brightness.low.gamma=true
 
+# EGL
+PRODUCT_VENDOR_PROPERTIES += \
+	ro.egl.blobcache.multifile=true \
+	ro.egl.blobcache.multifile_limit=33554432
+
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
