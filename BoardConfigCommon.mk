@@ -135,7 +135,7 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
 # Partitions - dynamic partition handling
 BOARD_ONEPLUS_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
 $(foreach p, $(call to-upper, $(BOARD_ONEPLUS_DYNAMIC_PARTITIONS_PARTITION_LIST)), \
-    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := ext4) \
+    $(eval BOARD_$(p)IMAGE_FILE_SYSTEM_TYPE := erofs) \
     $(eval TARGET_COPY_OUT_$(p) := $(call to-lower, $(p))))
 BOARD_SUPER_PARTITION_GROUPS := oneplus_dynamic_partitions
 BOARD_SUPER_PARTITION_SIZE ?= 11190403072
