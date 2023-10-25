@@ -14,5 +14,5 @@
 
 runtime_resource_overlay {
     name: "OPSM8350SystemUI",
-    device_specific: true,
+    product_specifc: true,
 }
