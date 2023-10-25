@@ -1,2 +1,2 @@
 # Performance
-type hal_oplus_performance_aidl_service, vendor_service, hal_service_type, service_manager_type;
+type hal_oplus_performance_aidl_service, hal_service_type, service_manager_type;
