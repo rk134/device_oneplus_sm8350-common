@@ -79,6 +79,7 @@ PRODUCT_PACKAGES += \
     AOSPALunaaSystemUI \
     FrameworksResTarget \
     SettingsProviderResTarget \
+    SettingsResTarget \
     SystemUIResTarget \
     LunaaNfcOverlay
 
