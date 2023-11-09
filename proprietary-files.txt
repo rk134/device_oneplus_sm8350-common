@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise, are
-## from latest Realme GT Master Edition (RMX3360_13.1.0.151(EX01)). at present.
+## from latest Realme GT Master Edition RMX3363_13.1.0.156(EX01). at present.
 
 # ADSP Modules
 odm/lib/rfsa/adsp/aiboost/libQnnHtpAltPrepSkel.so
@@ -218,7 +218,7 @@ vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
-# Camera
+# Camera - from (RMX3360_13.1.0.151(EX01))
 odm/etc/camera/CameraHWConfiguration.config
 odm/etc/camera/aicolor/duallut_background.bmp
 odm/etc/camera/aicolor/duallut_portrait.bmp
