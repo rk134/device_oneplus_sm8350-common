@@ -120,6 +120,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=1
+
 PRODUCT_VENDOR_PROPERTIES += \
     debug.sf.disable_backpressure=1 \
     debug.sf.frame_rate_multiple_threshold=60 \
