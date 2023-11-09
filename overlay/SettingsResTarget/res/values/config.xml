@@ -6,4 +6,7 @@
 <resources>
     <!-- The Enrollment Progress bar for UDFPS sensor in pixels -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">102</integer>
+
+    <!-- Override UDFPS Animation Padding -->
+    <dimen name="udfps_lottie_translate_y">-400dp</dimen>
 </resources>
