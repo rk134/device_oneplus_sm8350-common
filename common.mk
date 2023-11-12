@@ -178,6 +178,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1.vendor \
+
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default
