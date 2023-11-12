@@ -42,7 +42,8 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++.vendor \
+    android.hardware.audio.sounddose-vendor-impl
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.config.vc_call_vol_steps=9 \
@@ -86,7 +87,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Camera - Stop inheriting until fixed. [REVERT ME]
-# $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
+$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -113,8 +114,8 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display - SF offsets
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml
 
 # Display
 PRODUCT_PACKAGES += \
@@ -181,6 +182,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
+
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
