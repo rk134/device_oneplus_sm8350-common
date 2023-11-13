@@ -113,10 +113,6 @@ PRODUCT_PACKAGES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
-# Display - SF offsets
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor
