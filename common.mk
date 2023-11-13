@@ -130,9 +130,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true \
     vendor.display.primary_mixer_stages=9
 
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.sys.brightness.low.gamma=true
-
 # EGL
 PRODUCT_VENDOR_PROPERTIES += \
 	ro.egl.blobcache.multifile=true \
