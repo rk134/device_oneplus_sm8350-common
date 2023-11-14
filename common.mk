@@ -121,6 +121,8 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.supports_background_blur=1
 
 PRODUCT_VENDOR_PROPERTIES += \
+    ro.hwui.render_ahead=10 \
+    debug.hwui.renderer=skiavk \
     debug.sf.disable_backpressure=1 \
     debug.sf.frame_rate_multiple_threshold=60 \
     ro.surface_flinger.refresh_rate_switching=true \
@@ -129,6 +131,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.set_touch_timer_ms=4000 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true \
     vendor.display.primary_mixer_stages=9
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    persist.sys.brightness.low.gamma=true
+
+TARGET_USES_VULKAN := true
 
 # EGL
 PRODUCT_VENDOR_PROPERTIES += \
@@ -176,7 +183,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
-# Lineage Health
+## Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
