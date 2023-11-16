@@ -122,7 +122,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.hwui.render_ahead=10 \
-    debug.hwui.renderer=skiavk \
     debug.sf.disable_backpressure=1 \
     debug.sf.frame_rate_multiple_threshold=60 \
     ro.surface_flinger.refresh_rate_switching=true \
@@ -134,8 +133,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.sys.brightness.low.gamma=true
-
-TARGET_USES_VULKAN := true
 
 # EGL
 PRODUCT_VENDOR_PROPERTIES += \
