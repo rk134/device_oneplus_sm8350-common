@@ -31,6 +31,16 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Media
+# OMX
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service \
+    libstagefright_omx.vendor
+
+PRODUCT_VENDOR_PROPERTIES += \
+    debug.stagefright.c2inputsurface=-1 \
+
 # Alert Slider
 PRODUCT_PACKAGES += \
     KeyHandler \
@@ -50,14 +60,21 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
 PRODUCT_ODM_PROPERTIES += \
-    ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.bcl.enabled=false \
     persist.vendor.audio.fluence.voicerec=true \
+    persist.vendor.audio.fluence.voicecall=false \
     persist.vendor.audio.speaker.prot.enable=false \
     persist.vendor.audio.spv4.enable=false \
     persist.vendor.audio.vbat.enabled=false \
-    vendor.audio.feature.spkr_prot.enable=false \
-    vendor.audio.hal.output.suspend.supported=false
+    ro.audio.monitorRotation=true \
+    ro.config.media_vol_steps=30 \
+    ro.vendor.audio.sdk.fluencetype=fluence
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    audio.deep_buffer.media=true \
+    audio.offload.min.duration.secs=30 \
+    audio.offload.video=true \
+    ro.af.client_heap_size_kbyte=7168
 
 # Biometrics
 TARGET_USES_FOD_ZPOS := true
@@ -87,7 +104,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Camera
-$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
+#$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -116,6 +133,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V1-ndk.vendor
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.supports_background_blur=1
