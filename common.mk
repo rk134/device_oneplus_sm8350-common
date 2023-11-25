@@ -50,14 +50,21 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
 PRODUCT_ODM_PROPERTIES += \
-    ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.bcl.enabled=false \
     persist.vendor.audio.fluence.voicerec=true \
+    persist.vendor.audio.fluence.voicecall=false \
     persist.vendor.audio.speaker.prot.enable=false \
     persist.vendor.audio.spv4.enable=false \
     persist.vendor.audio.vbat.enabled=false \
-    vendor.audio.feature.spkr_prot.enable=false \
-    vendor.audio.hal.output.suspend.supported=false
+    ro.audio.monitorRotation=true \
+    ro.config.media_vol_steps=30 \
+    ro.vendor.audio.sdk.fluencetype=fluence
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    audio.deep_buffer.media=true \
+    audio.offload.min.duration.secs=30 \
+    audio.offload.video=true \
+    ro.af.client_heap_size_kbyte=7168
 
 # Biometrics
 TARGET_USES_FOD_ZPOS := true
