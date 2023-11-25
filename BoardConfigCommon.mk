@@ -124,6 +124,9 @@ BOARD_KERNEL_PAGESIZE := 4096
 KERNEL_FULL_LLVM := true
 KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/devices/virtual/oplus_chg/battery/mmi_charging_enable
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 201326592
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
