@@ -58,6 +58,9 @@ function blob_fixup() {
         odm/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc)
             sed -i "/user/ s/system/root/g" "${2}"
             ;;
+        odm/lib/libdlbdsservice_v3_6.so | odm/lib/libstagefright_soft_ddpdec.so | odm/lib/libstagefrightdolby.so | odm/lib64/libdlbdsservice_v3_6.so)
+            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+            ;;
     esac
 }
 
