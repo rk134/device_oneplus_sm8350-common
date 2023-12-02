@@ -74,6 +74,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
 
+# Bluetooth - AIDL
+TARGET_USE_AIDL_QTI_BT_AUDIO := true
+
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
@@ -111,6 +114,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpm.idletimer.mode=default \
     persist.vendor.dpmhalservice.enable=1
+
+# Dex
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+USE_DEX2OAT_DEBUG := false
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    dalvik.vm.dex2oat-filter=everything \
+    dalvik.vm.image-dex2oat-filter=everything
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -168,6 +181,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.gatekeeper.disable_spu=true
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1.vendor \
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor
@@ -220,7 +237,8 @@ PRODUCT_PACKAGES += \
     OPSM8350Frameworks \
     OPSM8350Settings \
     OPSM8350SystemUI \
-    WifiResTarget
+    WifiResTarget \
+    WifiResTargetMainline
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -228,6 +246,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Performance
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
+# Hotword Enrollment
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
