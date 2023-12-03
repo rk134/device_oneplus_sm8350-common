@@ -57,12 +57,12 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 
 PRODUCT_VENDOR_PROPERTIES += \
-    vendor.audio.dolby.ds2.enabled=false
-    vendor.audio.dolby.ds2.hardbypass=false
-    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1
-    ro.vendor.dolby.model=PAFM00
-    ro.vendor.dolby.device=OP46C3
-    ro.vendor.dolby.manufacturer=OPLUS
+    vendor.audio.dolby.ds2.enabled=false \
+    vendor.audio.dolby.ds2.hardbypass=false \
+    ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
+    ro.vendor.dolby.model=PAFM00 \
+    ro.vendor.dolby.device=OP46C3 \
+    ro.vendor.dolby.manufacturer=OPLUS \
     ro.vendor.dolby.brand=OPLUS
 
 PRODUCT_ODM_PROPERTIES += \
@@ -199,7 +199,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1.vendor \
+    android.hardware.health@2.1.vendor
 
 # HIDL
 PRODUCT_PACKAGES += \
