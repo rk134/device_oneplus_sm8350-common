@@ -149,6 +149,10 @@ PRODUCT_PACKAGES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# FaceSense
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.face.sense_service.camera_id=1
+
 # Display - SF offsets
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml
@@ -266,6 +270,11 @@ PRODUCT_COPY_FILES += \
 # Hotword Enrollment
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+
+
+# Privapp-permissions
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.control_privapp_permissions=log
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
