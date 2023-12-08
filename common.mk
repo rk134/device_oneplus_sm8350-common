@@ -124,7 +124,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    android.frameworks.stats@1.0.vendor
 
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
@@ -189,10 +190,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
-
-# GPS
-LOC_HIDL_VERSION = 4.0
-TARGET_GPS_COMPONENT_VARIANT := gps
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
