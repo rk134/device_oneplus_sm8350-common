@@ -22,12 +22,19 @@ echo 128 > /sys/block/dm-8/queue/read_ahead_kb
 echo 128 > /sys/block/dm-9/queue/read_ahead_kb
 
 # Governor (up/down) rate_limit configuration
-echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-echo 500 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
-echo 10000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
-echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
-echo 5000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
-echo 500 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
+#echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+#echo 500 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+#echo 10000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
+#echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
+#echo 5000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
+#echo 500 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
+
+echo 500 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us
+echo 20000 > /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us
+echo 1000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
+echo 10000 > /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us
+echo 2000 > /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us
+echo 5000 > /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us
 
 # Scheduler configuration
 echo 65 85 > /proc/sys/kernel/sched_upmigrate
@@ -38,7 +45,8 @@ echo 75 > /proc/sys/kernel/sched_group_downmigrate
 # Runtime cpusets
 echo 0-7 > /dev/cpuset/top-app/cpus
 echo 0-1 > /dev/cpuset/background/cpus
-echo 0-3 > /dev/cpuset/system-background/cpus
+echo 0-2 > /dev/cpuset/system-background/cpus
+echo 0-6 > /dev/cpuset/foreground/cpus
 
 # UCLamp tuning
 echo 1 > /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
@@ -71,8 +79,7 @@ fi
 echo deep > /sys/power/mem_sleep
 
 # CPU Input boost
-echo "0:1324800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
-echo 150 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
+echo 200 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
 
 # SSG
 echo 25 > /dev/blkio/background/blkio.ssg.max_available_ratio

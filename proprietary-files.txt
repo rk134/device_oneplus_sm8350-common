@@ -247,7 +247,6 @@ odm/etc/camera/config/hi846|01ec7d6acea52c978b2067eb87cb48661dd79594
 odm/etc/camera/config/imx615|633c3613732c050e69ebb00eb5ecf164f3fa283f
 odm/etc/camera/config/oplus_camera_algo_switch_config|67cf40abc667025283cfa91b0328b60d7e568c19
 odm/etc/camera/config/oplus_camera_aps_config|b5eda70a8e6d07d4ec6884d90f4c0b25d4834d52
-odm/etc/camera/config/oplus_camera_config|b57a9f70dc868f3b68ab3e2a0f57d842e7cd8724
 odm/etc/camera/config/ov02b|fe4e60a80aec160b62e9427b131a2031d766e9aa
 odm/etc/camera/config/ov64b|213b9af9626fa893a0d641361c4279b03160dd20
 odm/etc/camera/config/video_beauty_default_config|d57924e9125bd1ad22303a5de2591adc780900e8
