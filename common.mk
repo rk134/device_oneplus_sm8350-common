@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    libstdc++.vendor \
+    libstdc++_vendor \
     android.hardware.audio.sounddose-vendor-impl
 
 PRODUCT_PACKAGES += \
@@ -113,7 +113,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Camera - Stop inheriting until fixed. [REVERT ME]
-# $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
+$(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -131,6 +131,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpm.idletimer.mode=default \
     persist.vendor.dpmhalservice.enable=1
+
+# UFFD
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.runtime_native_boot.enable_uffd_gc=true \
+    ro.dalvik.vm.enable_uffd_gc=true
 
 # Dex
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
@@ -172,6 +177,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.set_idle_timer_ms=4000 \
     ro.surface_flinger.set_touch_timer_ms=4000 \
+    vendor.display.enable_rounded_corner=0 \
+    vendor.display.disable_layer_stitch=1 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true \
     vendor.display.primary_mixer_stages=9
 
