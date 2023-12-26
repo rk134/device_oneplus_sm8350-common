@@ -220,7 +220,8 @@ PRODUCT_PACKAGES += \
     OPSM8350Frameworks \
     OPSM8350Settings \
     OPSM8350SystemUI \
-    WifiResTarget
+    WifiResTarget \
+    WifiResTargetMainline
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
