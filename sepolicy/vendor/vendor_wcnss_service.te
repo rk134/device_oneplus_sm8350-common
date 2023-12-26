@@ -1,0 +1,2 @@
+create_dir_file(vendor_wcnss_service, mnt_vendor_file)
+allow vendor_wcnss_service vendor_wifi_vendor_log_data_file:dir rw_dir_perms;
