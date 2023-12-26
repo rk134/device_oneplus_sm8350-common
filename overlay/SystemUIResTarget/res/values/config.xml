@@ -20,4 +20,7 @@
     <!-- Respect drawable/rounded.xml intrinsic size for multiple radius corner path customization -->
     <bool name="config_roundedCornerMultipleRadius">true</bool>
 
+    <!-- Location for charging text in pixels -->
+    <dimen name="keyguard_indication_margin_bottom">350px</dimen>
+
 </resources>
