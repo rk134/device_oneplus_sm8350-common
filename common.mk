@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    libstdc++.vendor \
+    libstdc++_vendor \
     android.hardware.audio.sounddose-vendor-impl
 
 PRODUCT_VENDOR_PROPERTIES += \
