@@ -1,8 +1,6 @@
 ## "- BSP" is from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0.
-## All proprietary files from this list, unless pinned and noted otherwise, are
-## from the latest OxygenOS for Oneplus 9RT which is MT2111_13.1.0.590(EX01)
-## and this is prefixed with "- OOS".
-git
+## "- OOS" is from latest OxygenOS for Oneplus 9RT which is (MT2111_14.0.0.211(EX01)).
+
 # ACDBs - OOS
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
