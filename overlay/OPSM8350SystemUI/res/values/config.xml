@@ -24,4 +24,6 @@
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
+    <integer name="volume_dialog_gravity">19</integer>
+
 </resources>

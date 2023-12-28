@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Apex
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
@@ -274,11 +277,6 @@ PRODUCT_COPY_FILES += \
 # Hotword Enrollment
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
-
-
-# Privapp-permissions
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.control_privapp_permissions=log
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
