@@ -116,6 +116,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpm.idletimer.mode=default \
     persist.vendor.dpmhalservice.enable=1
 
+# UFFD
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.device_config.runtime_native_boot.enable_uffd_gc=true \
+    ro.dalvik.vm.enable_uffd_gc=true
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
